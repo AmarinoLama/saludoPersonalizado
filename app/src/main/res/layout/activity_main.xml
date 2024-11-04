@@ -23,6 +23,57 @@
         android:hint="Año de nacimiento"
         android:inputType="number"/>
 
+    <RadioGroup
+        android:id="@+id/rg_genero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_femenino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sra."
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/rb_masculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sr."/>
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cb_despedida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desea una despedida?"/>
+
+    <TextView
+        android:id="@+id/tv_despedida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elige tu despedida"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+
+    <RadioGroup
+        android:id="@+id/rg_despedida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <RadioButton
+            android:id="@+id/rb_adios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adiós"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/rb_pronto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasta pronto"/>
+    </RadioGroup>
+
     <Button
         android:id="@+id/btn_saludar"
         android:layout_width="wrap_content"
@@ -32,7 +83,7 @@
 
     <TextView
         android:id="@+id/tv_saludo"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:textSize="30dp"
