@@ -13,21 +13,22 @@
         android:id="@+id/et_nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre"/>
+        android:hint="Nombre"
+        android:inputType="text"/>
 
     <EditText
         android:id="@+id/et_nacimiento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Año de nacimiento"/>
+        android:hint="Año de nacimiento"
+        android:inputType="number"/>
 
     <Button
         android:id="@+id/btn_saludar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="Saludar"
-        android:onClick="darleBtn"/>
+        android:text="Saludar"/>
 
     <TextView
         android:id="@+id/tv_saludo"
